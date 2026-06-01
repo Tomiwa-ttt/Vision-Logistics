@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import Reveal from '@/components/Reveal'
+import VisionOpsDemo from '@/components/VisionOpsDemo'
 
 export default function VisionOps() {
   return (
@@ -19,14 +20,7 @@ export default function VisionOps() {
           >
             ← Back to Lab
           </Link>
-
-          <div className="glass-card mt-8 flex min-h-[280px] flex-col items-center justify-center p-8 text-center sm:mt-10 sm:min-h-[320px] sm:p-12 md:min-h-[420px]">
-            <p className="eyebrow text-[var(--accent)]">Demo coming soon</p>
-            <p className="body-lg mx-auto mt-6 max-w-md">
-              Upload a document — AI will extract structured data and surface actionable fields.
-            </p>
-            <div className="mt-10 h-px w-24 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-          </div>
+          <VisionOpsDemo />
         </div>
       </Reveal>
     </main>
